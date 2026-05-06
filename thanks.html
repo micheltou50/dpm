@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank you — DPM Design &amp; Project Management</title>
+<title>Thank You — DPM Design &amp; Project Management</title>
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <style>
   .thanks-section {
@@ -16,57 +16,42 @@
     align-items: center;
     justify-content: center;
     padding: 80px var(--pad);
-    background: linear-gradient(180deg, #FFF 0%, var(--bg-alt) 100%);
-    position: relative;
-  }
-  .thanks-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(20, 24, 29, 0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(20, 24, 29, 0.025) 1px, transparent 1px);
-    background-size: 56px 56px;
-    pointer-events: none;
-  }
-  .thanks-card {
     text-align: center;
-    max-width: 640px;
-    position: relative;
   }
+  .thanks-card { max-width: 720px; }
   .thanks-card .check {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: var(--accent-soft);
-    color: var(--accent-deep);
-    margin: 0 auto 28px;
+    width: 88px;
+    height: 88px;
+    border: 2px solid var(--accent);
+    background: var(--accent);
+    color: #FFF;
+    margin: 0 auto 32px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .thanks-card .check svg { width: 32px; height: 32px; }
+  .thanks-card .check svg { width: 40px; height: 40px; }
   .thanks-card h1 {
     font-family: var(--display);
-    font-size: clamp(40px, 6vw, 64px);
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: -0.025em;
-    margin-bottom: 20px;
+    font-size: clamp(56px, 9vw, 120px);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
   }
   .thanks-card h1 em {
     font-style: italic;
-    font-weight: 500;
-    background: linear-gradient(90deg, var(--accent), var(--accent-deep));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    font-weight: 700;
+    color: var(--accent);
   }
   .thanks-card p {
-    font-size: 17px;
-    line-height: 1.6;
+    font-size: 19px;
+    line-height: 1.5;
     color: var(--ink-soft);
-    margin-bottom: 32px;
+    margin-bottom: 40px;
+    max-width: 56ch;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
 </head>
@@ -81,13 +66,11 @@
       </a>
       <nav class="primary">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
+        <a href="services.html">What We Do</a>
+        <a href="about.html">Who We Are</a>
         <a href="contact.html">Contact</a>
       </nav>
       <div class="bar-cta">
-        <a href="tel:+61400000000" class="bar-phone">0400 000 000</a>
         <button class="nav-toggle" aria-label="Open menu">Menu</button>
       </div>
     </div>
@@ -97,7 +80,7 @@
 <section class="thanks-section">
   <div class="thanks-card">
     <div class="check">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
     </div>
     <h1>Brief <em>received</em>.</h1>
     <p>Your message has landed in the studio inbox. We'll review the project details and respond within two business days with an indicative pathway and fee proposal.</p>
