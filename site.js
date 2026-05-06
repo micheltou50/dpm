@@ -1,4 +1,4 @@
-// DPM site — shared scripts
+// MT Management site — shared scripts
 
 // Reveal-on-scroll
 const io = new IntersectionObserver((entries) => {
@@ -15,7 +15,7 @@ document.querySelectorAll('.reveal, .stagger').forEach(el => io.observe(el));
 // Hero headline reveal on load
 window.addEventListener('load', () => {
   requestAnimationFrame(() => {
-    const headline = document.querySelector('h1.headline');
+    const headline = document.querySelector('h1.hero-headline');
     if (headline) headline.classList.add('in');
     document.querySelectorAll('.hero .stagger, .page-hero .stagger').forEach(el => el.classList.add('in'));
   });
