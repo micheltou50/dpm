@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — DPM Design &amp; Project Management</title>
+<meta name="description" content="Send DPM a brief — tenancy address, project type, and approval pathway. Response within two business days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=DM+Sans:ital,wght@0,300..600;1,300..500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="bar-inner">
+      <a class="mark" href="index.html">
+        <span class="logo">DPM</span>
+        <span class="sub">Design &amp; Project Management</span>
+      </a>
+      <nav class="primary">
+        <a href="about.html">Practice</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="current">Contact</a>
+      </nav>
+      <div class="meta-right"><span class="dot"></span>Sydney NSW · Open for projects</div>
+      <button class="nav-toggle" aria-label="Open menu">Menu</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-meta stagger">
+      <div>§ 04 — Contact</div>
+      <div class="right">Response · 2 business days</div>
+    </div>
+
+    <h1 class="page-title stagger">Send a <span class="accent-w">brief</span>.</h1>
+
+    <div class="page-hero-lede stagger">
+      <p>Tenancy address, project type, and where you are in the approval process. We'll respond with an indicative pathway and a fixed-fee proposal where the scope is clear.</p>
+      <div class="nav-prev-next">
+        <a href="projects.html">← Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT BODY ============ -->
+<section style="padding: clamp(60px, 8vw, 120px) 0;">
+  <div class="wrap">
+    <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: clamp(40px, 6vw, 96px);" class="contact-layout">
+
+      <!-- Sidebar with details -->
+      <aside class="reveal">
+        <div style="margin-bottom: 48px;">
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 16px;">§ Direct</div>
+          <div style="font-family: var(--display); font-size: 22px; font-weight: 350; line-height: 1.4; font-variation-settings: 'SOFT' 50;">
+            <a href="mailto:michel@dpmdesign.com.au" style="color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 2px;">michel@dpmdesign.com.au</a>
+          </div>
+          <div style="margin-top: 12px; font-family: var(--display); font-size: 22px; font-weight: 350; line-height: 1.4; font-variation-settings: 'SOFT' 50;">
+            <a href="tel:+61400000000" style="color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 2px;">+61 400 000 000</a>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 48px;">
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 16px;">§ Studio</div>
+          <div style="font-size: 16px; line-height: 1.6; color: var(--ink);">
+            Sydney, NSW<br>
+            <span style="color: var(--ink-soft);">By appointment</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 48px;">
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 16px;">§ Hours</div>
+          <div style="font-size: 16px; line-height: 1.7; color: var(--ink);">
+            Mon — Fri · 8:30 — 5:30<br>
+            <span style="color: var(--ink-soft);">AEST / AEDT</span>
+          </div>
+        </div>
+
+        <div>
+          <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 16px;">§ Service area</div>
+          <div style="font-size: 15px; line-height: 1.7; color: var(--ink-soft);">
+            Sydney's Northern Beaches and surrounding LGAs. NSW only.
+          </div>
+        </div>
+      </aside>
+
+      <!-- Form -->
+      <div class="reveal">
+        <form class="contact-form" name="brief" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thanks.html">
+          <input type="hidden" name="form-name" value="brief">
+          <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+          <div class="field-grid-2">
+            <div class="field">
+              <label for="name">Name <span class="req">*</span></label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="company">Company / Trading As</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="field-grid-2">
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="address">Project address</label>
+            <input id="address" name="address" type="text" placeholder="Tenancy address, suburb, postcode">
+          </div>
+
+          <div class="field-grid-2">
+            <div class="field">
+              <label for="service">Service required <span class="req">*</span></label>
+              <select id="service" name="service" required>
+                <option value="">— select —</option>
+                <option value="drafting">Architectural drafting</option>
+                <option value="da">Development Application (DA)</option>
+                <option value="cdc">Complying Development (CDC)</option>
+                <option value="cc">Construction Certificate (CC)</option>
+                <option value="portal">NSW Planning Portal lodgement</option>
+                <option value="bca">BCA / NCC compliance report</option>
+                <option value="combined">Combined / not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="stage">Project stage</label>
+              <select id="stage" name="stage">
+                <option value="">— select —</option>
+                <option value="brief">Brief / pre-design</option>
+                <option value="design">Design in progress</option>
+                <option value="ready">Design ready, need approval</option>
+                <option value="approved">Approved, need CC</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Brief <span class="req">*</span></label>
+            <textarea id="message" name="message" required placeholder="Existing use, proposed use, approximate area, council, target timeline. Anything you'd like us to know."></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="cta">
+              Send brief
+              <span class="arrow">→</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 900px) {
+    .contact-layout { grid-template-columns: 1fr !important; }
+  }
+</style>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-mark">
+        <div class="logo">DPM</div>
+        <div class="tagline">Design &amp; Project Management. Sydney drafting practice for NSW commercial approvals.</div>
+      </div>
+      <div class="footer-col">
+        <h5>Practice</h5>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="services.html#drafting">Drafting</a>
+        <a href="services.html#da">DA</a>
+        <a href="services.html#cdc">CDC</a>
+        <a href="services.html#cc">CC</a>
+        <a href="services.html#portal">Portal Lodgement</a>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <a href="mailto:michel@dpmdesign.com.au">michel@dpmdesign.com.au</a>
+        <a href="tel:+61400000000">+61 400 000 000</a>
+        <span style="display:block; padding: 5px 0; font-size: 14px; color: var(--ink-soft);">Sydney NSW</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 DPM Design &amp; Project Management</div>
+      <div class="center">A trading name of MT Management Pty Ltd</div>
+      <div class="right">ABN 00 000 000 000</div>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+
+</body>
+</html>
