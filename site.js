@@ -1,4 +1,4 @@
-// MT Management site — shared scripts
+// MWorx Group site — shared scripts
 
 // Reveal-on-scroll
 const io = new IntersectionObserver((entries) => {

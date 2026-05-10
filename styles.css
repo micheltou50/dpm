@@ -13,8 +13,8 @@
   --rule: #D8D2C2;
   --rule-soft: rgba(14, 14, 14, 0.08);
   --rule-faint: rgba(14, 14, 14, 0.04);
-  --accent: #047857;
-  --accent-hover: #065F46;
+  --accent: #0F9E6E;
+  --accent-hover: #0A7E56;
   --accent-soft: #D1FAE5;
 
   --display: 'Familjen Grotesk', system-ui, sans-serif;
@@ -90,10 +90,6 @@ header.bar {
   height: 80px;
   display: block;
   margin-bottom: 20px;
-}
-
-.logo-mark.logo-light {
-  filter: brightness(0) invert(1);
 }
 
 .mark .logo {
@@ -1266,7 +1262,7 @@ form.contact-form {
 }
 
 .faq-item[open] summary::after {
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23047857' stroke-width='2'><line x1='5' y1='12' x2='19' y2='12'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F9E6E' stroke-width='2'><line x1='5' y1='12' x2='19' y2='12'/></svg>");
 }
 
 .faq-item .answer {
