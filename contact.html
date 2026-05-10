@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- form-detection-trigger -->
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — MWorx Group</title>
@@ -78,9 +76,12 @@
         </div>
       </aside>
 
-      <form class="contact-form" name="brief" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks">
-        <input type="hidden" name="form-name" value="brief">
-        <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <form class="contact-form" method="POST" action="https://formsubmit.co/info@mworxgroup.com.au">
+        <input type="hidden" name="_next" value="https://mworxgroup.com.au/thanks">
+        <input type="hidden" name="_subject" value="New brief from MWorx Group website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
 
         <div class="field">
           <label for="name">Your Name <span class="req">*</span></label>
