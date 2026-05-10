@@ -80,62 +80,41 @@
         <input type="hidden" name="form-name" value="brief">
         <p class="hp"><label>Don't fill this out: <input name="bot-field"></label></p>
 
-        <div class="field-grid-2">
-          <div class="field">
-            <label for="name">Name <span class="req">*</span></label>
-            <input id="name" name="name" type="text" required autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="company">Company / Trading As</label>
-            <input id="company" name="company" type="text" autocomplete="organization">
-          </div>
-        </div>
-
-        <div class="field-grid-2">
-          <div class="field">
-            <label for="email">Email <span class="req">*</span></label>
-            <input id="email" name="email" type="email" required autocomplete="email">
-          </div>
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel">
-          </div>
+        <div class="field">
+          <label for="name">Your Name <span class="req">*</span></label>
+          <input id="name" name="name" type="text" required autocomplete="name">
         </div>
 
         <div class="field">
-          <label for="address">Project Address</label>
-          <input id="address" name="address" type="text" placeholder="Tenancy address, suburb, postcode">
-        </div>
-
-        <div class="field-grid-2">
-          <div class="field">
-            <label for="service">Service Required <span class="req">*</span></label>
-            <select id="service" name="service" required>
-              <option value="">— select —</option>
-              <option value="design">Design &amp; Documentation</option>
-              <option value="portal">Planning Portal Submissions</option>
-              <option value="project-management">Project Management</option>
-              <option value="consultancy">Consultancy</option>
-              <option value="combined">Combined / Not sure yet</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="stage">Project Stage</label>
-            <select id="stage" name="stage">
-              <option value="">— select —</option>
-              <option value="feasibility">Feasibility / pre-design</option>
-              <option value="design">Design in progress</option>
-              <option value="ready">Design ready, need approval</option>
-              <option value="da-approved">DA approved, need Construction Certificate (CC)</option>
-              <option value="construction">In construction</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+          <label for="email">Email Address <span class="req">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email">
         </div>
 
         <div class="field">
-          <label for="message">Project Brief <span class="req">*</span></label>
-          <textarea id="message" name="message" required placeholder="Project type, scope, council or location, target timeline. Anything you'd like us to know."></textarea>
+          <label for="service">Service <span class="req">*</span></label>
+          <select id="service" name="service" required>
+            <option value="">— Please choose an option —</option>
+            <option value="design">Design &amp; Documentation</option>
+            <option value="portal">Planning Portal Submissions</option>
+            <option value="project-management">Project Management</option>
+            <option value="consultancy">Consultancy</option>
+            <option value="combined">Combined / Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="phone">Contact Number <span class="req">*</span></label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel">
+        </div>
+
+        <div class="field">
+          <label for="location">Location</label>
+          <input id="location" name="location" type="text" placeholder="Enter a location">
+        </div>
+
+        <div class="field">
+          <label for="message">Project Description <span class="req">*</span></label>
+          <textarea id="message" name="message" required placeholder="Project type, scope, target timeline. Anything you'd like us to know."></textarea>
         </div>
 
         <div class="form-foot">
