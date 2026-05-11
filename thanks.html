@@ -68,11 +68,29 @@
       </a>
       <nav class="primary">
         <a href="index.html">Home</a>
-        <a href="services.html">What We Do</a>
+        <div class="nav-item-dropdown" data-dropdown>
+          <a href="services.html" class="nav-link">What We Do <span class="nav-caret" aria-hidden="true">▾</span></a>
+          <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-label="Toggle services menu" aria-controls="nav-mega-services"><span aria-hidden="true">▾</span></button>
+          <div class="nav-mega" id="nav-mega-services">
+            <div class="nav-mega-inner">
+              <a class="nav-mega-col" href="design-documentation.html">
+                <div class="nav-mega-num">01</div>
+                <div class="nav-mega-title">Design &amp; Documentation</div>
+                <div class="nav-mega-desc">Residential, commercial &amp; industrial design — concept through to approval.</div>
+              </a>
+              <a class="nav-mega-col" href="planning-portal.html">
+                <div class="nav-mega-num">02</div>
+                <div class="nav-mega-title">Planning Portal Submissions</div>
+                <div class="nav-mega-desc">NSW Planning Portal lodgement — fixed-fee, handled end to end.</div>
+              </a>
+            </div>
+          </div>
+        </div>
         <a href="about.html">Who We Are</a>
         <a href="contact.html">Contact</a>
       </nav>
       <div class="bar-cta">
+        <a href="contact.html" class="btn btn-dark btn-sm">Enquire <span class="btn-arrow">→</span></a>
         <button class="nav-toggle" aria-label="Open menu">Menu</button>
       </div>
     </div>
@@ -92,6 +110,34 @@
 
 <footer class="site-footer">
   <div class="wrap">
+    <div class="footer-jumbo">MWorx Group <em>—</em><br>Design &amp; project consultancy.</div>
+
+    <div class="footer-grid">
+      <div class="footer-mark">
+        <img class="logo-mark" src="logo-light.svg" alt="" width="80" height="80">
+        <div class="logo">MWorx Group</div>
+        <p>Design &amp; project consultancy. Design documentation and NSW Planning Portal lodgement for residential, commercial and industrial projects across Australia.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <a href="index.html">Home</a>
+        <a href="services.html">What We Do</a>
+        <a href="about.html">Who We Are</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="design-documentation.html">Design &amp; Documentation</a>
+        <a href="planning-portal.html">Planning Portal Submissions</a>
+      </div>
+      <div class="footer-col">
+        <h5>Studio</h5>
+        <a href="mailto:info@mworxgroup.com.au">info@mworxgroup.com.au</a>
+        <a href="tel:+61490488423">0490 488 423</a>
+        <span>Australia-wide</span>
+      </div>
+    </div>
+
     <div class="footer-bottom">
       <div>© 2026 MT Management Pty Ltd</div>
       <div class="center">Design &amp; project consultancy</div>

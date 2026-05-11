@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What We Do — MWorx Group</title>
-<meta name="description" content="Design &amp; Documentation, Planning Portal Submissions, Project Management and Consultancy for residential and commercial projects across Australia.">
+<meta name="description" content="Design &amp; Documentation and Planning Portal Submissions — residential, commercial and industrial projects across DA, CDC and CC approval pathways.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,7 +23,24 @@
       </a>
       <nav class="primary">
         <a href="index.html">Home</a>
-        <a href="services.html" class="current">What We Do</a>
+        <div class="nav-item-dropdown" data-dropdown>
+          <a href="services.html" class="nav-link current">What We Do <span class="nav-caret" aria-hidden="true">▾</span></a>
+          <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-label="Toggle services menu" aria-controls="nav-mega-services"><span aria-hidden="true">▾</span></button>
+          <div class="nav-mega" id="nav-mega-services">
+            <div class="nav-mega-inner">
+              <a class="nav-mega-col" href="design-documentation.html">
+                <div class="nav-mega-num">01</div>
+                <div class="nav-mega-title">Design &amp; Documentation</div>
+                <div class="nav-mega-desc">Residential, commercial &amp; industrial design — concept through to approval.</div>
+              </a>
+              <a class="nav-mega-col" href="planning-portal.html">
+                <div class="nav-mega-num">02</div>
+                <div class="nav-mega-title">Planning Portal Submissions</div>
+                <div class="nav-mega-desc">NSW Planning Portal lodgement — fixed-fee, handled end to end.</div>
+              </a>
+            </div>
+          </div>
+        </div>
         <a href="about.html">Who We Are</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -35,150 +52,45 @@
   </div>
 </header>
 
-<!-- ============ PAGE HERO ============ -->
 <section class="page-hero">
   <div class="wrap">
     <div class="page-hero-meta">
       <a href="index.html">Home</a> <span>/</span> <span>What We Do</span>
     </div>
     <h1 class="page-title">What we <em>do</em>.</h1>
-    <p class="page-lede">Four service areas covering the full project lifecycle — engaged individually or as a complete brief. Each can be tailored to the stage your project is at, whether that's a feasibility conversation, a Development Application (DA), a Construction Certificate (CC) or a Complying Development Certificate (CDC).</p>
+    <p class="page-lede">Two service areas — design documentation and NSW Planning Portal lodgement — covering residential, commercial and industrial projects across Development Application (DA), Complying Development Certificate (CDC) and Construction Certificate (CC) pathways.</p>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
-<div class="wrap">
-  <div style="padding-top: clamp(40px, 5vw, 64px);">
+<section class="section">
+  <div class="wrap">
     <div class="section-meta">
       <div class="label">Service Areas</div>
-      <div>4 areas · Engaged individually or together</div>
+      <div>2 areas · Engaged individually or together</div>
+    </div>
+
+    <div class="svc-overview svc-overview-2">
+      <a class="svc-card reveal" href="design-documentation.html">
+        <div class="svc-card-top">
+          <div class="svc-card-num">01</div>
+          <div class="svc-card-arrow">→</div>
+        </div>
+        <h3>Design &amp; Documentation</h3>
+        <p>Residential, commercial and industrial design — from concept through to approval.</p>
+      </a>
+      <a class="svc-card reveal" href="planning-portal.html">
+        <div class="svc-card-top">
+          <div class="svc-card-num">02</div>
+          <div class="svc-card-arrow">→</div>
+        </div>
+        <h3>Planning Portal Submissions</h3>
+        <p>NSW Planning Portal lodgement — fixed-fee, handled end to end.</p>
+      </a>
     </div>
   </div>
+</section>
 
-  <!-- 01 DESIGN & DOCUMENTATION -->
-  <section class="svc-detail" id="design">
-    <div class="left">
-      <div class="label-num">01</div>
-      <div class="label-name">Design &amp; Documentation</div>
-    </div>
-    <div>
-      <h2>Drawings and reports prepared for <em>clear approval</em>.</h2>
-      <p class="intro">Design and documentation is the foundation of every approval. We translate concepts into well-coordinated, dimensioned documentation suited to councils, certifiers and approval authorities — whether the project is heading down a Development Application (DA), Construction Certificate (CC) or Complying Development Certificate (CDC) pathway.</p>
-
-      <h4>How we assist</h4>
-      <p>Whether you're starting with a sketch, a hand-drawn plan or another consultant's documentation, we develop the drawings and supporting reports to a standard suited to the relevant approval pathway. Accessibility, fire and egress, food premises and other statutory provisions are considered at design stage rather than at submission.</p>
-
-      <h4>What we deliver</h4>
-      <ul class="deliverables">
-        <li>Floor plans, sections, elevations and reflected ceiling plans</li>
-        <li>Joinery elevations, finishes schedules and key construction details</li>
-        <li>Site analysis and existing conditions drawings</li>
-        <li>Statement of Environmental Effects (SEE) for DA submissions</li>
-        <li>Compliance statements for Complying Development Certificate (CDC) submissions</li>
-        <li>Construction Certificate (CC) documentation, including BCA compliance statements</li>
-        <li>Coordinated PDF drawing set issued to council and certifier standard</li>
-      </ul>
-
-      <div class="timeline-bar">
-        <div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div class="text"><strong>Typical turnaround:</strong> 2–4 weeks for a standard documentation set, depending on scope and pathway.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 02 PLANNING PORTAL SUBMISSIONS -->
-  <section class="svc-detail" id="portal">
-    <div class="left">
-      <div class="label-num">02</div>
-      <div class="label-name">Planning Portal Submissions</div>
-    </div>
-    <div>
-      <h2>NSW Planning Portal submissions, <em>handled</em>.</h2>
-      <p class="intro">The NSW Planning Portal has its own logic — strict naming conventions, mandatory document types, owner consent forms, statutory declarations and fee schedules. We manage the upload workflow end to end, so the submission can move forward cleanly regardless of who prepared the drawings.</p>
-
-      <h4>How we assist</h4>
-      <p>Available as a standalone service — engaged independently of any documentation work — for clients who already have their own drawings prepared but want the submission managed. Equally available as part of a wider Design &amp; Documentation engagement.</p>
-
-      <h4>What we deliver</h4>
-      <ul class="deliverables">
-        <li>NSW Planning Portal case creation and management</li>
-        <li>Document preparation to portal naming standards</li>
-        <li>Owner's consent, cost estimates and statutory declarations</li>
-        <li>Council and certifier liaison through to determination</li>
-        <li>Response to requests for information (RFIs) and re-submission management</li>
-        <li>Coordination with related certificates including Occupation Certificate (OC) where required</li>
-      </ul>
-
-      <div class="timeline-bar">
-        <div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div class="text"><strong>Lodgement:</strong> 2–3 business days from receipt of complete documentation.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 03 PROJECT MANAGEMENT -->
-  <section class="svc-detail" id="project-management">
-    <div class="left">
-      <div class="label-num">03</div>
-      <div class="label-name">Project Management</div>
-    </div>
-    <div>
-      <h2>Coordinated delivery from <em>brief to handover</em>.</h2>
-      <p class="intro">Project management keeps a project moving through its various stages — design, documentation, approval and delivery. We act as the single point of coordination across consultants, councils, certifiers and trades, helping the project stay on programme and within budget.</p>
-
-      <h4>How we assist</h4>
-      <p>Engagement can begin at any point — feasibility, concept design, mid-documentation, after a DA approval, or once a Complying Development Certificate (CDC) has been issued. Scope is tailored to where you are and what's needed.</p>
-
-      <h4>What we deliver</h4>
-      <ul class="deliverables">
-        <li>Project programme and milestone tracking</li>
-        <li>Coordination of architects, engineers and other consultants</li>
-        <li>Council, certifier and authority liaison</li>
-        <li>Budget tracking and cost control input</li>
-        <li>Tender support and contractor coordination</li>
-        <li>Construction stage liaison through to Occupation Certificate (OC)</li>
-      </ul>
-
-      <div class="timeline-bar">
-        <div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div class="text"><strong>Engagement:</strong> by stage, by milestone, or as ongoing project support.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 04 CONSULTANCY -->
-  <section class="svc-detail" id="consultancy">
-    <div class="left">
-      <div class="label-num">04</div>
-      <div class="label-name">Consultancy</div>
-    </div>
-    <div>
-      <h2>Practical advice for <em>project decisions</em>.</h2>
-      <p class="intro">Consultancy covers the strategic input that shapes how a project is approached — before drawings are committed and fees are spent. Useful at the beginning of a project, when reviewing options for an existing site, or when a second opinion is needed on documentation prepared elsewhere.</p>
-
-      <h4>How we assist</h4>
-      <p>Engaged as a focused review or ongoing advisory support. Output is practical and project-specific — written recommendations, comparison of pathway options, or a coordinated review of existing material.</p>
-
-      <h4>What we deliver</h4>
-      <ul class="deliverables">
-        <li>Feasibility input and concept review</li>
-        <li>Approval pathway recommendations — DA, Complying Development Certificate (CDC) or other</li>
-        <li>Site due diligence and pre-purchase planning advice</li>
-        <li>Review of documentation prepared by other consultants</li>
-        <li>Strategy for existing approvals, modifications and re-submissions</li>
-        <li>Coordination of independent expertise where required</li>
-      </ul>
-
-      <div class="timeline-bar">
-        <div class="clock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div class="text"><strong>Engagement:</strong> hourly, fixed-scope review, or ongoing retained advice.</div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ============ APPROVAL PATHWAYS CALLOUT ============ -->
-<section class="section section-emerald" style="margin-top: clamp(40px, 5vw, 80px);">
+<section class="section section-emerald">
   <div class="wrap">
     <div class="section-meta">
       <div class="label">Reference</div>
@@ -188,39 +100,31 @@
     <h2 class="section-title">Common <em>approval pathways</em>.</h2>
     <p class="section-lead">A short reference to the pathways most often referenced in our work. The right route depends on the project, site and council — we recommend the most suitable option once the brief is reviewed.</p>
 
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border: 1px solid rgba(255,255,255,0.25); margin-top: 32px;" class="pathways-grid">
-      <div style="padding: clamp(28px, 4vw, 48px); border-right: 1px solid rgba(255,255,255,0.25); border-bottom: 1px solid rgba(255,255,255,0.25);">
-        <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 14px;">DA</div>
-        <h4 style="font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 12px; color: #FFF;">Development Application (DA)</h4>
-        <p style="font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.85);">A formal request for planning approval from the relevant consent authority — used where merit assessment is needed, such as change of use, alterations, signage and new works.</p>
+    <div class="pathways-grid">
+      <div class="pathway-cell">
+        <div class="pathway-abbr">DA</div>
+        <h4>Development Application</h4>
+        <p>Formal planning approval from council — used for change of use, new works, alterations and signage.</p>
       </div>
-      <div style="padding: clamp(28px, 4vw, 48px); border-bottom: 1px solid rgba(255,255,255,0.25);">
-        <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 14px;">CDC</div>
-        <h4 style="font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 12px; color: #FFF;">Complying Development Certificate (CDC)</h4>
-        <p style="font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.85);">A faster, certifier-issued approval available when a project meets the conditions of the relevant State Environmental Planning Policy (SEPP).</p>
+      <div class="pathway-cell">
+        <div class="pathway-abbr">CDC</div>
+        <h4>Complying Development Certificate</h4>
+        <p>Faster, certifier-issued approval available when a project meets the conditions of the relevant SEPP.</p>
       </div>
-      <div style="padding: clamp(28px, 4vw, 48px); border-right: 1px solid rgba(255,255,255,0.25);">
-        <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 14px;">CC</div>
-        <h4 style="font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 12px; color: #FFF;">Construction Certificate (CC)</h4>
-        <p style="font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.85);">The certificate issued after a DA approval that allows construction to commence — confirms documentation complies with the BCA and the conditions of consent.</p>
+      <div class="pathway-cell">
+        <div class="pathway-abbr">CC</div>
+        <h4>Construction Certificate</h4>
+        <p>Issued after DA approval — confirms documentation complies with the BCA and conditions of consent. Authorises construction to commence.</p>
       </div>
-      <div style="padding: clamp(28px, 4vw, 48px);">
-        <div style="font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 14px;">OC</div>
-        <h4 style="font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; margin-bottom: 12px; color: #FFF;">Occupation Certificate (OC)</h4>
-        <p style="font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.85);">The certificate issued at the end of construction, confirming the building is suitable for occupation. Often coordinated alongside Project Management.</p>
+      <div class="pathway-cell">
+        <div class="pathway-abbr">OC</div>
+        <h4>Occupation Certificate</h4>
+        <p>Issued at the end of construction — confirms the building is suitable for occupation.</p>
       </div>
     </div>
   </div>
 </section>
 
-<style>
-  @media (max-width: 800px) {
-    .pathways-grid { grid-template-columns: 1fr !important; }
-    .pathways-grid > div { border-right: none !important; }
-  }
-</style>
-
-<!-- ============ FAQ ============ -->
 <section class="section section-divider">
   <div class="wrap">
     <div class="section-meta">
@@ -232,64 +136,60 @@
 
     <div class="faq-list">
       <details class="faq-item">
-        <summary>How do I know which approval pathway suits my project?</summary>
+        <summary>How do I know if my project needs a DA or a CDC?</summary>
         <div class="answer">
-          <p>The Complying Development Certificate (CDC) pathway is governed by State Environmental Planning Policies (SEPPs), which list the conditions a project must meet to qualify. If your project meets those conditions, CDC is generally faster. If the project requires merit assessment, the Development Application (DA) pathway is usually appropriate.</p>
-          <p>We assess this up front and recommend the pathway most suited to the project before any documentation work begins.</p>
+          <p>If your project meets the conditions of the relevant State Environmental Planning Policy (SEPP), the CDC pathway is generally faster. If merit assessment is needed, the DA pathway is appropriate. We check your planning certificate and liaise with certifiers to confirm before documentation starts.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>What's the difference between a DA approval and a Construction Certificate (CC)?</summary>
+        <summary>What's the difference between a DA and a Construction Certificate?</summary>
         <div class="answer">
-          <p>A DA approval is a planning consent — confirmation that the project is appropriate for the site. It does not, on its own, authorise construction.</p>
-          <p>A Construction Certificate (CC) is the document a private certifier issues confirming that the construction documentation complies with the BCA and the conditions of consent. Construction can commence once the CC is issued.</p>
+          <p>A DA is planning consent — it confirms the project is appropriate for the site. A CC is issued by a certifier confirming the construction documentation complies with the BCA and conditions of consent. Construction can't start until the CC is issued.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>How long does a DA take to be approved?</summary>
+        <summary>Can you do the CC if someone else did the DA?</summary>
         <div class="answer">
-          <p>Timeframes vary by council, project type and complexity. Many DA assessments take several weeks to several months after lodgement. Larger projects, projects requiring referral to external authorities, or projects with one or more requests for information (RFIs) can take longer.</p>
-          <p>Documentation preparation typically adds another 3 to 4 weeks before submission.</p>
+          <p>Yes. We regularly pick up projects at the CC stage where another consultant handled the DA. Send through the approval and conditions of consent and we'll take it from there.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>Can I engage Planning Portal Submissions on its own?</summary>
+        <summary>Can I use Planning Portal Submissions without doing my drawings with you?</summary>
         <div class="answer">
-          <p>Yes — Planning Portal Submissions is offered as a standalone service. If you have your own drawings prepared by another consultant or in-house, we can manage the NSW Planning Portal workflow end to end without doing the documentation work ourselves.</p>
+          <p>Yes. Planning Portal Submissions is a standalone service. If you have your own drawings prepared by another consultant or in-house, we can lodge the application through the portal without doing the documentation work ourselves.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>Can you pick up a project mid-way through?</summary>
+        <summary>What does the $400 portal lodgement fee cover?</summary>
         <div class="answer">
-          <p>Yes. We regularly come in at the Construction Certificate (CC) stage when a DA was lodged by another consultant, or take over projects already in design or documentation. Send through what you have and we'll suggest where to pick up.</p>
+          <p>It covers setting up the application, entering all details, uploading and categorising documents, completing the portal workflow, and coordinating with you. Council, certifier and statutory fees are separate and paid by you directly.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>Do you provide fixed-fee proposals?</summary>
+        <summary>Do you provide fixed-fee proposals for design work?</summary>
         <div class="answer">
-          <p>For most well-defined scopes, yes. Once the brief is reviewed and the pathway is confirmed, we provide a fixed-fee proposal for the documentation phase. Council and certifier fees are passed through at cost.</p>
+          <p>For most well-defined scopes, yes. Once the brief is reviewed and the pathway is confirmed, we provide a fixed-fee proposal. Council and certifier fees are passed through at cost.</p>
         </div>
       </details>
 
       <details class="faq-item">
-        <summary>Do you work across Australia?</summary>
+        <summary>Do you work outside NSW?</summary>
         <div class="answer">
-          <p>Yes. We support clients across Australia with design documentation, approval coordination, planning portal submissions and project consultancy. Approval terminology and portal requirements vary between states and councils, so the documentation approach is tailored to the project location.</p>
+          <p>Yes. We support clients across Australia with design documentation. The Planning Portal service is NSW-specific, but design and documentation services cover all states.</p>
         </div>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ============ JUMBO CTA ============ -->
 <section class="cta-jumbo">
   <div class="wrap">
-    <h2>Need a <em>fee</em> proposal?</h2>
+    <h2>Have a project in <em>mind?</em></h2>
     <p>Send the project address, project type and where you are in the process. We'll respond with an indicative pathway and fee proposal within two business days.</p>
     <div class="ctas">
       <a href="contact.html" class="btn btn-primary">Send a Brief <span class="btn-arrow">→</span></a>
@@ -299,7 +199,6 @@
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-jumbo">MWorx Group <em>—</em><br>Design &amp; project consultancy.</div>
@@ -308,7 +207,7 @@
       <div class="footer-mark">
         <img class="logo-mark" src="logo-light.svg" alt="" width="80" height="80">
         <div class="logo">MWorx Group</div>
-        <p>Design &amp; project consultancy. Design documentation, approval coordination, planning portal submissions and project consultancy for residential and commercial projects across Australia.</p>
+        <p>Design &amp; project consultancy. Design documentation and NSW Planning Portal lodgement for residential, commercial and industrial projects across Australia.</p>
       </div>
       <div class="footer-col">
         <h5>Site</h5>
@@ -319,10 +218,8 @@
       </div>
       <div class="footer-col">
         <h5>Services</h5>
-        <a href="services.html#design">Design &amp; Documentation</a>
-        <a href="services.html#portal">Planning Portal Submissions</a>
-        <a href="services.html#project-management">Project Management</a>
-        <a href="services.html#consultancy">Consultancy</a>
+        <a href="design-documentation.html">Design &amp; Documentation</a>
+        <a href="planning-portal.html">Planning Portal Submissions</a>
       </div>
       <div class="footer-col">
         <h5>Studio</h5>

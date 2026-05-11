@@ -30,3 +30,42 @@ if (toggle && nav) {
     toggle.textContent = nav.classList.contains('open') ? 'Close' : 'Menu';
   });
 }
+
+// Nav dropdown — desktop hover with close-delay + mobile tap
+document.querySelectorAll('.nav-item-dropdown').forEach((item) => {
+  let closeTimer;
+  const isDesktop = () => window.matchMedia('(min-width: 901px)').matches;
+
+  const open = () => {
+    clearTimeout(closeTimer);
+    item.classList.add('open');
+    const subToggle = item.querySelector('.nav-sub-toggle');
+    if (subToggle) subToggle.setAttribute('aria-expanded', 'true');
+  };
+  const close = () => {
+    item.classList.remove('open');
+    const subToggle = item.querySelector('.nav-sub-toggle');
+    if (subToggle) subToggle.setAttribute('aria-expanded', 'false');
+  };
+  const scheduleClose = () => {
+    clearTimeout(closeTimer);
+    closeTimer = setTimeout(close, 220);
+  };
+
+  item.addEventListener('mouseenter', () => { if (isDesktop()) open(); });
+  item.addEventListener('mouseleave', () => { if (isDesktop()) scheduleClose(); });
+  item.addEventListener('focusin', () => { if (isDesktop()) open(); });
+  item.addEventListener('focusout', (e) => {
+    if (isDesktop() && !item.contains(e.relatedTarget)) scheduleClose();
+  });
+
+  const subToggle = item.querySelector('.nav-sub-toggle');
+  if (subToggle) {
+    subToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      item.classList.toggle('open');
+      subToggle.setAttribute('aria-expanded', item.classList.contains('open'));
+    });
+  }
+});

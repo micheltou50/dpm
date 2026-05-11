@@ -23,7 +23,24 @@
       </a>
       <nav class="primary">
         <a href="index.html">Home</a>
-        <a href="services.html">What We Do</a>
+        <div class="nav-item-dropdown" data-dropdown>
+          <a href="services.html" class="nav-link">What We Do <span class="nav-caret" aria-hidden="true">▾</span></a>
+          <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-label="Toggle services menu" aria-controls="nav-mega-services"><span aria-hidden="true">▾</span></button>
+          <div class="nav-mega" id="nav-mega-services">
+            <div class="nav-mega-inner">
+              <a class="nav-mega-col" href="design-documentation.html">
+                <div class="nav-mega-num">01</div>
+                <div class="nav-mega-title">Design &amp; Documentation</div>
+                <div class="nav-mega-desc">Residential, commercial &amp; industrial design — concept through to approval.</div>
+              </a>
+              <a class="nav-mega-col" href="planning-portal.html">
+                <div class="nav-mega-num">02</div>
+                <div class="nav-mega-title">Planning Portal Submissions</div>
+                <div class="nav-mega-desc">NSW Planning Portal lodgement — fixed-fee, handled end to end.</div>
+              </a>
+            </div>
+          </div>
+        </div>
         <a href="about.html">Who We Are</a>
         <a href="contact.html" class="current">Contact</a>
       </nav>
@@ -71,7 +88,7 @@
           </div>
           <div class="info-row">
             <div class="key">Service Area</div>
-            <div class="val muted">Australia-wide. We support residential and commercial projects with design documentation, planning portal submissions, project management and consultancy.</div>
+            <div class="val muted">Australia-wide. We support residential, commercial and industrial projects with design documentation and NSW Planning Portal lodgement.</div>
           </div>
         </div>
       </aside>
@@ -99,9 +116,7 @@
             <option value="">— Please choose an option —</option>
             <option value="design">Design &amp; Documentation</option>
             <option value="portal">Planning Portal Submissions</option>
-            <option value="project-management">Project Management</option>
-            <option value="consultancy">Consultancy</option>
-            <option value="combined">Combined / Not sure yet</option>
+            <option value="combined">Both / Not sure yet</option>
           </select>
         </div>
 
@@ -139,7 +154,7 @@
       <div class="footer-mark">
         <img class="logo-mark" src="logo-light.svg" alt="" width="80" height="80">
         <div class="logo">MWorx Group</div>
-        <p>Design &amp; project consultancy. Design documentation, approval coordination, planning portal submissions and project consultancy for residential and commercial projects across Australia.</p>
+        <p>Design &amp; project consultancy. Design documentation and NSW Planning Portal lodgement for residential, commercial and industrial projects across Australia.</p>
       </div>
       <div class="footer-col">
         <h5>Site</h5>
@@ -150,10 +165,8 @@
       </div>
       <div class="footer-col">
         <h5>Services</h5>
-        <a href="services.html#design">Design &amp; Documentation</a>
-        <a href="services.html#portal">Planning Portal Submissions</a>
-        <a href="services.html#project-management">Project Management</a>
-        <a href="services.html#consultancy">Consultancy</a>
+        <a href="design-documentation.html">Design &amp; Documentation</a>
+        <a href="planning-portal.html">Planning Portal Submissions</a>
       </div>
       <div class="footer-col">
         <h5>Studio</h5>
