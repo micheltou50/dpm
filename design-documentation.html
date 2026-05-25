@@ -188,8 +188,9 @@
     <h2 class="section-title">Get a <em>fee proposal</em>.</h2>
     <p class="section-lead">Send a short brief with the project address, project type and where you are in the process. We'll respond with an indicative pathway and fee proposal within two business days.</p>
 
-    <form class="contact-form" id="dd-enquiry-form" novalidate>
-      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <form class="contact-form" id="dd-enquiry-form" name="design-documentation-enquiry" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="design-documentation-enquiry">
+      <p class="hp"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
 
       <div class="field-grid-2">
         <div class="field">
@@ -409,46 +410,37 @@
     btn.innerHTML = 'Sending…';
 
     var data = new FormData(form);
-    var json = {};
-    data.forEach(function(v, k) { json[k] = v; });
+    var values = {};
+    data.forEach(function(v, k) { values[k] = v; });
 
-    json._subject = 'New Fee Proposal Request — MWorx Group';
-    json._captcha = false;
-    json._template = 'table';
-    json._replyto = json.email;
-
-    fetch('https://formsubmit.co/ajax/info@mworxgroup.com.au', {
+    fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(json)
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
     })
     .then(function(r) {
-      return r.json().then(function(body) { return { status: r.status, body: body }; });
-    })
-    .then(function(result) {
-      var body = result.body || {};
-      var ok = body.success === 'true' || body.success === true;
-      if (ok) {
-        form.style.display = 'none';
-        successEl.style.display = 'block';
-        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-        var payload = {
-          event: 'mworx_lead_submit',
-          form_location: 'design_documentation',
-          help_needed: json.help_needed || null,
-          application_type: null,
-          documents_ready: null,
-          project_type: json.project_type || null,
-          stage: json.stage || null
-        };
-
-        if (window.dataLayer) { window.dataLayer.push(payload); }
-        window.dispatchEvent(new CustomEvent('mworx_lead_submit', { detail: payload }));
-      } else {
-        console.error('[MWorx form] FormSubmit response (status ' + result.status + '):', body);
-        throw new Error(body.message || 'Submission failed');
+      if (!r.ok) {
+        return r.text().then(function(text) {
+          throw new Error('HTTP ' + r.status + ' — ' + (text || 'no body'));
+        });
       }
+
+      form.style.display = 'none';
+      successEl.style.display = 'block';
+      successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      var payload = {
+        event: 'mworx_lead_submit',
+        form_location: 'design_documentation',
+        help_needed: values.help_needed || null,
+        application_type: null,
+        documents_ready: null,
+        project_type: values.project_type || null,
+        stage: values.stage || null
+      };
+
+      if (window.dataLayer) { window.dataLayer.push(payload); }
+      window.dispatchEvent(new CustomEvent('mworx_lead_submit', { detail: payload }));
     })
     .catch(function(err) {
       console.error('[MWorx form] Submission error:', err);
