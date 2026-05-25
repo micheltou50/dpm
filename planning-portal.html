@@ -267,7 +267,7 @@
       </div>
 
       <div class="form-foot">
-        <p>Response within 2 business days · No GST charged</p>
+        <p>Response within 2 business days</p>
         <button type="submit" class="btn btn-primary" data-track="cta" data-cta-location="planning-portal-form" data-cta-type="form" data-cta-page="planning-portal">Start Lodgement Request <span class="btn-arrow">→</span></button>
       </div>
 
@@ -433,9 +433,13 @@
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(json)
     })
-    .then(function(r) { return r.json(); })
+    .then(function(r) {
+      return r.json().then(function(body) { return { status: r.status, body: body }; });
+    })
     .then(function(result) {
-      if (result.success === 'true' || result.success === true) {
+      var body = result.body || {};
+      var ok = body.success === 'true' || body.success === true;
+      if (ok) {
         form.style.display = 'none';
         successEl.style.display = 'block';
         successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -453,10 +457,12 @@
         if (window.dataLayer) { window.dataLayer.push(payload); }
         window.dispatchEvent(new CustomEvent('mworx_lead_submit', { detail: payload }));
       } else {
-        throw new Error('Submission failed');
+        console.error('[MWorx form] FormSubmit response (status ' + result.status + '):', body);
+        throw new Error(body.message || 'Submission failed');
       }
     })
-    .catch(function() {
+    .catch(function(err) {
+      console.error('[MWorx form] Submission error:', err);
       btn.disabled = false;
       btn.innerHTML = btnHTML;
       errorEl.style.display = 'block';
