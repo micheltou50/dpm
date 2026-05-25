@@ -2448,3 +2448,99 @@ footer.site-footer {
 }
 
 @media (max-width: 700px) { .floating-cta { display: inline-flex; } }
+
+/* ---------- Inline landing-page form: radio pills, success & error ---------- */
+.radio-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.radio-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid var(--rule);
+  background: #FFF;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.radio-pill input[type="radio"] {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.radio-pill:hover { border-color: var(--ink); color: var(--ink); }
+
+.radio-pill:has(input:checked) {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.form-success {
+  display: none;
+  padding: clamp(28px, 4vw, 48px);
+  background: #FFF;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  text-align: left;
+}
+
+.form-success-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.form-success h3 {
+  font-family: var(--display);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.form-success h3 em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.form-success p {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 56ch;
+}
+
+.form-error {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #FEF2F2;
+  border: 1px solid #FCA5A5;
+  border-left: 3px solid #DC2626;
+  font-size: 14px;
+  color: #7F1D1D;
+}
+
+.form-error a { color: #7F1D1D; font-weight: 600; }

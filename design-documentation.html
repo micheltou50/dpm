@@ -45,7 +45,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="bar-cta">
-        <a href="contact.html" class="btn btn-dark btn-sm">Enquire <span class="btn-arrow">→</span></a>
+        <a href="#enquire" class="btn btn-dark btn-sm" data-track="cta" data-cta-location="design-documentation-header" data-cta-type="form" data-cta-page="design-documentation">Enquire <span class="btn-arrow">→</span></a>
         <button class="nav-toggle" aria-label="Open menu">Menu</button>
       </div>
     </div>
@@ -172,7 +172,101 @@
     </div>
 
     <div class="svc-section-cta reveal">
-      <a class="btn btn-dark" href="contact.html">Send a Brief <span class="btn-arrow">→</span></a>
+      <a class="btn btn-dark" href="#enquire" data-track="cta" data-cta-location="design-documentation-section" data-cta-type="form" data-cta-page="design-documentation">Get a Fee Proposal <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INLINE ENQUIRY FORM ============ -->
+<section class="section section-divider" id="enquire">
+  <div class="wrap">
+    <div class="section-meta">
+      <div class="label">Get a Fee Proposal</div>
+      <div>Response within 2 business days</div>
+    </div>
+
+    <h2 class="section-title">Get a <em>fee proposal</em>.</h2>
+    <p class="section-lead">Send a short brief with the project address, project type and where you are in the process. We'll respond with an indicative pathway and fee proposal within two business days.</p>
+
+    <form class="contact-form" id="dd-enquiry-form" novalidate>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+      <div class="field-grid-2">
+        <div class="field">
+          <label for="dd-name">Your Name <span class="req">*</span></label>
+          <input id="dd-name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="dd-phone">Phone <span class="req">*</span></label>
+          <input id="dd-phone" name="phone" type="tel" required autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="dd-email">Email <span class="req">*</span></label>
+        <input id="dd-email" name="email" type="email" required autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="dd-project-address">Project Address <span class="req">*</span></label>
+        <input id="dd-project-address" name="project_address" type="text" required placeholder="Street address, suburb, postcode">
+      </div>
+
+      <div class="field-grid-2">
+        <div class="field">
+          <label for="dd-project-type">Project Type <span class="req">*</span></label>
+          <select id="dd-project-type" name="project_type" required>
+            <option value="">— Please choose —</option>
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Industrial">Industrial</option>
+            <option value="Mixed-use">Mixed-use</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="dd-stage">Project Stage <span class="req">*</span></label>
+          <select id="dd-stage" name="stage" required>
+            <option value="">— Please choose —</option>
+            <option value="Concept / feasibility">Concept / feasibility</option>
+            <option value="Pre-DA / design development">Pre-DA / design development</option>
+            <option value="Ready to lodge DA / CDC">Ready to lodge DA / CDC</option>
+            <option value="DA approved — need CC">DA approved — need CC</option>
+            <option value="Modification / S4.55">Modification / S4.55</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="dd-help-needed">Help Needed <span class="req">*</span></label>
+        <select id="dd-help-needed" name="help_needed" required>
+          <option value="">— Please choose —</option>
+          <option value="Full design and documentation">Full design and documentation</option>
+          <option value="Documentation only (have a design)">Documentation only (have a design)</option>
+          <option value="CC documentation (have DA approval)">CC documentation (have DA approval)</option>
+          <option value="Consultant coordination">Consultant coordination</option>
+          <option value="Not sure — need advice">Not sure — need advice</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="dd-message">Project Description</label>
+        <textarea id="dd-message" name="message" placeholder="Project scope, target timeline, anything you'd like us to know about the site or brief."></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p>Response within 2 business days · No GST charged</p>
+        <button type="submit" class="btn btn-primary" data-track="cta" data-cta-location="design-documentation-form" data-cta-type="form" data-cta-page="design-documentation">Get a Fee Proposal <span class="btn-arrow">→</span></button>
+      </div>
+
+      <div class="form-error" id="dd-form-error" role="alert">Something went wrong. Please try again, or call <a href="tel:+61490488423">0490 488 423</a>.</div>
+    </form>
+
+    <div class="form-success" id="dd-form-success" role="status">
+      <div class="form-success-check">✓</div>
+      <h3>Enquiry <em>received</em>.</h3>
+      <p>Thanks — your enquiry has been received. We'll review the details and get back to you within 2 business days.</p>
     </div>
   </div>
 </section>
@@ -245,8 +339,8 @@
     <h2>Have a project in <em>mind?</em></h2>
     <p>Send the project address, project type and where you are in the process. We'll respond with an indicative pathway and fee proposal within two business days.</p>
     <div class="ctas">
-      <a href="contact.html" class="btn btn-primary">Send a Brief <span class="btn-arrow">→</span></a>
-      <a href="tel:+61490488423" class="btn btn-outline">Call 0490 488 423</a>
+      <a href="#enquire" class="btn btn-primary" data-track="cta" data-cta-location="design-documentation-jumbo" data-cta-type="form" data-cta-page="design-documentation">Get a Fee Proposal <span class="btn-arrow">→</span></a>
+      <a href="tel:+61490488423" class="btn btn-outline" data-track="cta" data-cta-location="design-documentation-jumbo" data-cta-type="call" data-cta-page="design-documentation">Call 0490 488 423</a>
     </div>
     <p style="margin-top: 24px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.55);">info@mworxgroup.com.au · 0490 488 423</p>
   </div>
@@ -290,9 +384,76 @@
   </div>
 </footer>
 
-<a href="contact.html" class="btn btn-primary floating-cta">Enquire <span class="btn-arrow">→</span></a>
+<a href="#enquire" class="btn btn-primary floating-cta" data-track="cta" data-cta-location="design-documentation-floating" data-cta-type="form" data-cta-page="design-documentation">Enquire <span class="btn-arrow">→</span></a>
 
 <script src="site.js"></script>
+<script>
+(function() {
+  var form = document.getElementById('dd-enquiry-form');
+  if (!form) return;
+  var successEl = document.getElementById('dd-form-success');
+  var errorEl = document.getElementById('dd-form-error');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    errorEl.style.display = 'none';
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    var btn = form.querySelector('button[type="submit"]');
+    var btnHTML = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending…';
+
+    var data = new FormData(form);
+    var json = {};
+    data.forEach(function(v, k) { json[k] = v; });
+
+    json._subject = 'New Fee Proposal Request — MWorx Group';
+    json._captcha = false;
+    json._template = 'table';
+    json._replyto = json.email;
+
+    fetch('https://formsubmit.co/ajax/info@mworxgroup.com.au', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(json)
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(result) {
+      if (result.success === 'true' || result.success === true) {
+        form.style.display = 'none';
+        successEl.style.display = 'block';
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        var payload = {
+          event: 'mworx_lead_submit',
+          form_location: 'design_documentation',
+          help_needed: json.help_needed || null,
+          application_type: null,
+          documents_ready: null,
+          project_type: json.project_type || null,
+          stage: json.stage || null
+        };
+
+        if (window.dataLayer) { window.dataLayer.push(payload); }
+        window.dispatchEvent(new CustomEvent('mworx_lead_submit', { detail: payload }));
+      } else {
+        throw new Error('Submission failed');
+      }
+    })
+    .catch(function() {
+      btn.disabled = false;
+      btn.innerHTML = btnHTML;
+      errorEl.style.display = 'block';
+      errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>

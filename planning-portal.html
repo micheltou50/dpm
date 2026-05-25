@@ -45,7 +45,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="bar-cta">
-        <a href="contact.html" class="btn btn-dark btn-sm">Enquire <span class="btn-arrow">→</span></a>
+        <a href="#enquire" class="btn btn-dark btn-sm" data-track="cta" data-cta-location="planning-portal-header" data-cta-type="form" data-cta-page="planning-portal">Enquire <span class="btn-arrow">→</span></a>
         <button class="nav-toggle" aria-label="Open menu">Menu</button>
       </div>
     </div>
@@ -169,11 +169,115 @@
         </div>
       </div>
 
-      <p class="pricing-note">All council, certifier and statutory fees are paid separately by the client — we don't mark them up.</p>
+      <p class="pricing-note">All council, certifier, NSW Planning Portal, consultant and statutory authority fees are payable separately by the client. No GST is charged as MWorx Group is not currently registered for GST.</p>
+    </div>
+
+    <!-- Quoted separately if needed -->
+    <div class="svc-subsection reveal">
+      <div class="svc-subsection-head">
+        <h3>Quoted separately if needed</h3>
+        <div class="svc-subsection-meta">Outside the $400 lodgement fee</div>
+      </div>
+      <p class="svc-subsection-body">The $400 fee covers portal lodgement only, where all required documentation and information are ready to submit. Drawings, reports, planning advice, design coordination, approval management and Section 4.55 / modification lodgements are quoted separately after scope review. If you're missing documents, we can review the scope and provide a separate fee proposal.</p>
     </div>
 
     <div class="svc-section-cta reveal">
-      <a class="btn btn-dark" href="contact.html">Send a Brief <span class="btn-arrow">→</span></a>
+      <a href="#enquire" class="btn btn-dark" data-track="cta" data-cta-location="planning-portal-pricing" data-cta-type="form" data-cta-page="planning-portal">Start Lodgement Request <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INLINE ENQUIRY FORM ============ -->
+<section class="section section-divider" id="enquire">
+  <div class="wrap">
+    <div class="section-meta">
+      <div class="label">Start Lodgement Request</div>
+      <div>Response within 2 business days</div>
+    </div>
+
+    <h2 class="section-title">Start <em>lodgement</em> request.</h2>
+    <p class="section-lead">Tell us about the application and we'll come back within two business days. After you submit, we'll confirm whether your enquiry falls under the $400 lodgement service or requires a separate fee proposal.</p>
+
+    <form class="contact-form" id="pp-enquiry-form" novalidate>
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+
+      <div class="field-grid-2">
+        <div class="field">
+          <label for="pp-name">Your Name <span class="req">*</span></label>
+          <input id="pp-name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="pp-phone">Phone <span class="req">*</span></label>
+          <input id="pp-phone" name="phone" type="tel" required autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="pp-email">Email <span class="req">*</span></label>
+        <input id="pp-email" name="email" type="email" required autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="pp-project-address">Project Address <span class="req">*</span></label>
+        <input id="pp-project-address" name="project_address" type="text" required placeholder="Street address, suburb, postcode">
+      </div>
+
+      <div class="field-grid-2">
+        <div class="field">
+          <label for="pp-help-needed">Help Needed <span class="req">*</span></label>
+          <select id="pp-help-needed" name="help_needed" required>
+            <option value="">— Please choose —</option>
+            <option value="Lodge a new application">Lodge a new application</option>
+            <option value="Review my documents first">Review my documents first</option>
+            <option value="Not sure — need advice">Not sure — need advice</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="pp-application-type">Application Type <span class="req">*</span></label>
+          <select id="pp-application-type" name="application_type" required>
+            <option value="">— Please choose —</option>
+            <option value="DA">Development Application (DA)</option>
+            <option value="CDC">Complying Development Certificate (CDC)</option>
+            <option value="CC">Construction Certificate (CC)</option>
+            <option value="PCA">Principal Certifier Appointment (PCA)</option>
+            <option value="OC">Occupation Certificate (OC)</option>
+            <option value="S4.55 / modification">Section 4.55 / modification</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Documents Ready to Lodge? <span class="req">*</span></label>
+        <div class="radio-row">
+          <label class="radio-pill"><input type="radio" name="documents_ready" value="Yes" required> Yes</label>
+          <label class="radio-pill"><input type="radio" name="documents_ready" value="No" required> No</label>
+          <label class="radio-pill"><input type="radio" name="documents_ready" value="Partially" required> Partially</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="pp-council">Council or Certifier (if known)</label>
+        <input id="pp-council" name="council_or_certifier" type="text" placeholder="e.g. City of Sydney, Strata Plus">
+      </div>
+
+      <div class="field">
+        <label for="pp-message">Anything else?</label>
+        <textarea id="pp-message" name="message" placeholder="Project type, scope or timing — anything that helps us assess the lodgement."></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p>Response within 2 business days · No GST charged</p>
+        <button type="submit" class="btn btn-primary" data-track="cta" data-cta-location="planning-portal-form" data-cta-type="form" data-cta-page="planning-portal">Start Lodgement Request <span class="btn-arrow">→</span></button>
+      </div>
+
+      <div class="form-error" id="pp-form-error" role="alert">Something went wrong. Please try again, or call <a href="tel:+61490488423">0490 488 423</a>.</div>
+    </form>
+
+    <div class="form-success" id="pp-form-success" role="status">
+      <div class="form-success-check">✓</div>
+      <h3>Enquiry <em>received</em>.</h3>
+      <p>Thanks — your enquiry has been received. We'll review the details and get back to you within 2 business days.</p>
     </div>
   </div>
 </section>
@@ -246,8 +350,8 @@
     <h2>Have a project in <em>mind?</em></h2>
     <p>Send the project address, project type and where you are in the process. We'll respond with an indicative pathway and fee proposal within two business days.</p>
     <div class="ctas">
-      <a href="contact.html" class="btn btn-primary">Send a Brief <span class="btn-arrow">→</span></a>
-      <a href="tel:+61490488423" class="btn btn-outline">Call 0490 488 423</a>
+      <a href="#enquire" class="btn btn-primary" data-track="cta" data-cta-location="planning-portal-jumbo" data-cta-type="form" data-cta-page="planning-portal">Start Lodgement Request <span class="btn-arrow">→</span></a>
+      <a href="tel:+61490488423" class="btn btn-outline" data-track="cta" data-cta-location="planning-portal-jumbo" data-cta-type="call" data-cta-page="planning-portal">Call 0490 488 423</a>
     </div>
     <p style="margin-top: 24px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.55);">info@mworxgroup.com.au · 0490 488 423</p>
   </div>
@@ -291,9 +395,76 @@
   </div>
 </footer>
 
-<a href="contact.html" class="btn btn-primary floating-cta">Enquire <span class="btn-arrow">→</span></a>
+<a href="#enquire" class="btn btn-primary floating-cta" data-track="cta" data-cta-location="planning-portal-floating" data-cta-type="form" data-cta-page="planning-portal">Enquire <span class="btn-arrow">→</span></a>
 
 <script src="site.js"></script>
+<script>
+(function() {
+  var form = document.getElementById('pp-enquiry-form');
+  if (!form) return;
+  var successEl = document.getElementById('pp-form-success');
+  var errorEl = document.getElementById('pp-form-error');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    errorEl.style.display = 'none';
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    var btn = form.querySelector('button[type="submit"]');
+    var btnHTML = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = 'Sending…';
+
+    var data = new FormData(form);
+    var json = {};
+    data.forEach(function(v, k) { json[k] = v; });
+
+    json._subject = 'New Lodgement Request — MWorx Group';
+    json._captcha = false;
+    json._template = 'table';
+    json._replyto = json.email;
+
+    fetch('https://formsubmit.co/ajax/info@mworxgroup.com.au', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(json)
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(result) {
+      if (result.success === 'true' || result.success === true) {
+        form.style.display = 'none';
+        successEl.style.display = 'block';
+        successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        var payload = {
+          event: 'mworx_lead_submit',
+          form_location: 'planning_portal',
+          help_needed: json.help_needed || null,
+          application_type: json.application_type || null,
+          documents_ready: json.documents_ready || null,
+          project_type: null,
+          stage: null
+        };
+
+        if (window.dataLayer) { window.dataLayer.push(payload); }
+        window.dispatchEvent(new CustomEvent('mworx_lead_submit', { detail: payload }));
+      } else {
+        throw new Error('Submission failed');
+      }
+    })
+    .catch(function() {
+      btn.disabled = false;
+      btn.innerHTML = btnHTML;
+      errorEl.style.display = 'block';
+      errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
